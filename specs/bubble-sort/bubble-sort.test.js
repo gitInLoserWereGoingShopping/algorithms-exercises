@@ -11,7 +11,7 @@
 */
 
 function bubbleSort(nums) {
-  // code goes here
+  // starting here
 }
 
 // unit tests
