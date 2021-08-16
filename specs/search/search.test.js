@@ -4,16 +4,39 @@
 // it's up to you what to return if the object isn't found (we're not testing that)
 
 function linearSearch(id, array) {
-  // code goes here
+  for (let el of array) {
+    if (id === el.id) return el;
+  }
 }
 
-function binarySearch(id, array) {
-  // code goes here
+function binarySearch(id, array) { //SORTED array input
+  //returns whole object being searched for based on id input
+  //is middle of array equal to id?
+  //no? is id  greater than middle of array?
+  //Yes? Go right and search
+  //No, it's less than? Go left and search
+  let min = 0;
+  let max = array.length - 1;
+  let index;
+  let element;
+
+  while (min <= max) {
+    index = Math.floor((min + max) / 2);
+    element = array[index];
+
+    if (element.id < id) {
+      min = index + 1;
+    } else if (element.id > id) {
+      max = index - 1;
+    } else {
+      return element;
+    }
+  }
 }
 
 // unit tests
 // do not modify the below code
-test.skip("linear search", function () {
+test("linear search", function () {
   const lookingFor = { id: 5, name: "Brian" };
   expect(
     linearSearch(5, [
@@ -35,7 +58,7 @@ test.skip("linear search", function () {
   ).toBe(lookingFor);
 });
 
-test.skip("binary search", function () {
+test("binary search", function () {
   const lookingFor = { id: 23, name: "Brian" };
   expect(
     binarySearch(23, [

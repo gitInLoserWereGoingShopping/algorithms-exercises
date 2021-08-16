@@ -9,8 +9,48 @@
 
 */
 
+// number = 1391, place = 0, longestNumber = 4 (longest number in particular set)
+//returns 1
+
+function getDigit(number, place, longestNumber) {
+  //returns 1
+  const numStr = number.toString();
+  const size = numStr.length;
+  const mod = longestNumber - size;
+  return numStr[place - mod] || 0;
+}
+
+function getLongestNumber(array) {
+  //returns longest number in array, 4
+  let longest = 0;
+  for (let i = 0; i < array.length; i++) {
+    const currentLength = array[i].toString().length;
+    longest = currentLength > longest ? currentLength : longest;
+  }
+  return longest;
+}
+
 function radixSort(array) {
-  // code goes here
+  //find longest number
+  const longestNumber = getLongestNumber(array);
+  //create how many buckets you need
+  //an array of 10 arrays (since we're doing base ten math)
+    //[e.g. would be a bucket for 0, 1, 2, 3, 4, ... , 8, 9]
+  const buckets = new Array(10).fill().map(() => []);
+  
+  //for loop for how many iterations you need to do (one iteration for each of the longest numbers)
+    //while loop  
+    //enqueue the numbers into their buckets
+  for (let i = longestNumber - 1; i >= 0; i--) {
+    while (array.length) {
+      const current = array.shift();
+      buckets[getDigit(current, i, longestNumber)].push(current);
+    }
+  }
+  
+  
+    //for loop for each bucket
+    //dequeue all of the items out of the bucket
 }
 
 // unit tests

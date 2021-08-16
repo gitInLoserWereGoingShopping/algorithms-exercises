@@ -10,6 +10,15 @@ function sort(array) {
   // call snapshot any time you do anything to the array
   // it's okay if you call it with duplicate value array,
   // it will deduplicate for you
+  // for (let i = 1; i < nums.length; i++) {
+  //   let numberToInsert = nums[i];
+  //   let j = 0;
+  //   for (j = i - 1; nums[j] > numberToInsert && j >= 0; j--) {
+  //     nums[j + 1] = nums[j];
+  //   }
+  //   nums[j + 1] = numberToInsert;
+  // }
+  // return nums;
   snapshot(array);
 }
 

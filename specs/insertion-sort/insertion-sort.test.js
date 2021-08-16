@@ -11,15 +11,28 @@
   your inner loop and it should handle the rest for you!
   
   And you put xdescribe instead of describe if you want to suspend running the unit tests.  
-*/
+  
+  iterate over nums starts at index 1
+  is current num larger than num to the left (i - j)
+    No: move left number to the right
+  
+  */
 
 function insertionSort(nums) {
-  // code goes here
+  for (let i = 1; i < nums.length; i++) {
+    let numberToInsert = nums[i];
+    let j = 0;
+    for (j = i - 1; nums[j] > numberToInsert && j >= 0; j--) {
+      nums[j + 1] = nums[j];
+    }
+    nums[j + 1] = numberToInsert;
+  }
+  return nums;
 }
 
 // unit tests
 // do not modify the below code
-test.skip("insertion sort", function () {
+test("insertion sort", function () {
   const nums = [10, 5, 3, 8, 2, 6, 4, 7, 9, 1];
   insertionSort(nums);
   expect(nums).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
