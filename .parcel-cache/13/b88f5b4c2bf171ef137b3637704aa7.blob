@@ -1,0 +1,58 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require("./tree.css");
+  var _treeVisualizer = require("./tree-visualizer");
+  var _lodash = require("lodash");
+  var _lodashDefault = _parcelHelpers.interopDefault(_lodash);
+  var _jsxFileName = "/home/init/coding/resources/algorithms-exercises/src/Tree.js";
+  class Tree {
+    add(num) {}
+    toObject() {
+      // returns a root node with
+      // {
+      // value:  <number>
+      // left:   <object>
+      // right:  <object>
+      // height: <number, optional>
+      // }
+      return {
+        value: 1,
+        left: null,
+        right: null,
+        height: 1
+      };
+    }
+  }
+  function TreeComponent() {
+    const nums = _lodashDefault.default.shuffle(_lodashDefault.default.range(50));
+    const tree = new Tree();
+    nums.map(num => tree.add(num));
+    const objs = tree.toObject();
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_treeVisualizer.TreeViz, {
+        root: objs,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 10
+        }
+      })
+    );
+  }
+  exports.default = TreeComponent;
+  _c = TreeComponent;
+  var _c;
+  $RefreshReg$(_c, "TreeComponent");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

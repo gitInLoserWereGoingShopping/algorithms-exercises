@@ -1,0 +1,130 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _react = require("react");
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactDom = require("react-dom");
+  var _reactRouterDom = require("react-router-dom");
+  var _Sort = require("./Sort");
+  var _SortDefault = _parcelHelpers.interopDefault(_Sort);
+  var _Tree = require("./Tree");
+  var _TreeDefault = _parcelHelpers.interopDefault(_Tree);
+  var _jsxFileName = "/home/init/coding/resources/algorithms-exercises/src/index.js";
+  const App = () => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("nav", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("ul", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/sort",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 15
+        }
+      }, "Sort")), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/tree",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 15
+        }
+      }, "Tree")))), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Switch, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/sort",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_SortDefault.default, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 13
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement(_reactRouterDom.Route, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement(_TreeDefault.default, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 13
+        }
+      })))))
+    );
+  };
+  _c = App;
+  _reactDom.render(/*#__PURE__*/_reactDefault.default.createElement(App, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 8
+    }
+  }), document.getElementById("app"));
+  var _c;
+  $RefreshReg$(_c, "App");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

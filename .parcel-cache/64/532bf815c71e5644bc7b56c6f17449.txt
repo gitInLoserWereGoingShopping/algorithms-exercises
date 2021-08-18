@@ -15,7 +15,7 @@
 85/home/init/coding/resources/algorithms-exercises/specs/traversals/depth-first.test.js1628793154198757400 0
 65/home/init/coding/resources/algorithms-exercises/specs/traversals1628793154198757400 1
 93/home/init/coding/resources/algorithms-exercises/specs/quick-sort/quick-sort.solution.test.js1628793154198757400 0
-84/home/init/coding/resources/algorithms-exercises/specs/quick-sort/quick-sort.test.js1628793154198757400 0
+84/home/init/coding/resources/algorithms-exercises/specs/quick-sort/quick-sort.test.js1628894196250000000 0
 65/home/init/coding/resources/algorithms-exercises/specs/quick-sort1628793154198757400 1
 86/home/init/coding/resources/algorithms-exercises/specs/pathfinding/pathfinding.test.js1628793154198757400 0
 76/home/init/coding/resources/algorithms-exercises/specs/pathfinding/logger.js1628793154198757400 0
@@ -29,18 +29,18 @@
 82/home/init/coding/resources/algorithms-exercises/specs/heap-sort/heap-sort.test.js1628793154198757400 0
 68/home/init/coding/resources/algorithms-exercises/specs/bloom-filters1628793154198757400 1
 70/home/init/coding/resources/algorithms-exercises/specs/avl/avl.test.js1628793154198757400 0
-79/home/init/coding/resources/algorithms-exercises/specs/arrays/arraylist.test.js1628793154198757400 0
+79/home/init/coding/resources/algorithms-exercises/specs/arrays/arraylist.test.js1629144245740000000 0
 88/home/init/coding/resources/algorithms-exercises/specs/arrays/arraylist.solution.test.js1628793154198757400 0
 89/home/init/coding/resources/algorithms-exercises/specs/arrays/linkedlist.solution.test.js1628793154198757400 0
 61/home/init/coding/resources/algorithms-exercises/specs/arrays1628793154198757400 1
-83/home/init/coding/resources/algorithms-exercises/specs/recursion/factorials.test.js1628793154198757400 0
+83/home/init/coding/resources/algorithms-exercises/specs/recursion/factorials.test.js1628880184730000000 0
 95/home/init/coding/resources/algorithms-exercises/specs/recursion/nested-arrays.solution.test.js1628793154198757400 0
-86/home/init/coding/resources/algorithms-exercises/specs/recursion/nested-arrays.test.js1628793154198757400 0
+86/home/init/coding/resources/algorithms-exercises/specs/recursion/nested-arrays.test.js1628882900980000000 0
 68/home/init/coding/resources/algorithms-exercises/specs/graph/jobs.js1628793154198757400 0
 83/home/init/coding/resources/algorithms-exercises/specs/graph/graph.solution.test.js1628793154198757400 0
 60/home/init/coding/resources/algorithms-exercises/specs/graph1628793154198757400 1
 93/home/init/coding/resources/algorithms-exercises/specs/merge-sort/merge-sort.solution.test.js1628793154198757400 0
-84/home/init/coding/resources/algorithms-exercises/specs/merge-sort/merge-sort.test.js1628793154198757400 0
+84/home/init/coding/resources/algorithms-exercises/specs/merge-sort/merge-sort.test.js1628889516070000000 0
 65/home/init/coding/resources/algorithms-exercises/specs/merge-sort1628793154198757400 1
 54/home/init/coding/resources/algorithms-exercises/specs1628793154198757400 1
 84/home/init/coding/resources/algorithms-exercises/node_modules/resolve-from/readme.md1493365924000000000 0
@@ -1910,7 +1910,7 @@
 100/home/init/coding/resources/algorithms-exercises/node_modules/caniuse-lite/data/features/lazyload.js499162500000000000 0
 108/home/init/coding/resources/algorithms-exercises/node_modules/caniuse-lite/data/features/array-find-index.js499162500000000000 0
 108/home/init/coding/resources/algorithms-exercises/node_modules/caniuse-lite/data/features/user-select-none.js499162500000000000 0
-76/home/init/coding/resources/algorithms-exercises/specs/search/search.test.js1628793154198757400 0
+76/home/init/coding/resources/algorithms-exercises/specs/search/search.test.js1629139286830000000 0
 106/home/init/coding/resources/algorithms-exercises/node_modules/caniuse-lite/data/features/css-namespaces.js499162500000000000 0
 105/home/init/coding/resources/algorithms-exercises/node_modules/caniuse-lite/data/features/readonly-attr.js499162500000000000 0
 99/home/init/coding/resources/algorithms-exercises/node_modules/caniuse-lite/data/features/netinfo.js499162500000000000 0
@@ -2826,7 +2826,7 @@
 83/home/init/coding/resources/algorithms-exercises/node_modules/lodash/_baseAssign.js499162500000000000 0
 72/home/init/coding/resources/algorithms-exercises/node_modules/pascalcase1628793171528757400 1
 83/home/init/coding/resources/algorithms-exercises/node_modules/lodash/_createCtor.js499162500000000000 0
-66/home/init/coding/resources/algorithms-exercises/package-lock.json1628875366590000000 0
+66/home/init/coding/resources/algorithms-exercises/package-lock.json1629209163833265800 0
 94/home/init/coding/resources/algorithms-exercises/node_modules/core-js/features/string/small.js499162500000000000 0
 86/home/init/coding/resources/algorithms-exercises/node_modules/@babel/core/node_modules1628793175398757400 1
 78/home/init/coding/resources/algorithms-exercises/node_modules/lodash/uniqBy.js499162500000000000 0
@@ -3351,7 +3351,7 @@
 86/home/init/coding/resources/algorithms-exercises/node_modules/caniuse-api/package.json499162500000000000 0
 70/home/init/coding/resources/algorithms-exercises/node_modules/pn/vm.js1515010282000000000 0
 78/home/init/coding/resources/algorithms-exercises/node_modules/pn/perf_hooks.js1515010282000000000 0
-84/home/init/coding/resources/algorithms-exercises/specs/radix-sort/radix-sort.test.js1628793154198757400 0
+84/home/init/coding/resources/algorithms-exercises/specs/radix-sort/radix-sort.test.js1629044596190000000 0
 71/home/init/coding/resources/algorithms-exercises/node_modules/pn/tls.js1515010282000000000 0
 80/home/init/coding/resources/algorithms-exercises/node_modules/regex-not/index.js1519093837000000000 0
 99/home/init/coding/resources/algorithms-exercises/node_modules/jest-diff/build/joinAlignedDiffs.d.ts499162500000000000 0
@@ -8121,7 +8121,7 @@
 108/home/init/coding/resources/algorithms-exercises/node_modules/regenerate-unicode-properties/Script/Syriac.js499162500000000000 0
 98/home/init/coding/resources/algorithms-exercises/node_modules/@parcel/source-map/dist/wasm-node.js499162500000000000 0
 127/home/init/coding/resources/algorithms-exercises/node_modules/postcss-normalize-unicode/node_modules/postcss/lib/lazy-result.js499162500000000000 0
-70/home/init/coding/resources/algorithms-exercises/specs/bst/bst.test.js1628793154198757400 0
+70/home/init/coding/resources/algorithms-exercises/specs/bst/bst.test.js1629209008763265800 0
 115/home/init/coding/resources/algorithms-exercises/node_modules/regenerate-unicode-properties/Script/Gunjala_Gondi.js499162500000000000 0
 124/home/init/coding/resources/algorithms-exercises/node_modules/regenerate-unicode-properties/Script/Inscriptional_Parthian.js499162500000000000 0
 85/home/init/coding/resources/algorithms-exercises/node_modules/posthtml-render/license499162500000000000 0
@@ -12554,7 +12554,7 @@
 112/home/init/coding/resources/algorithms-exercises/node_modules/jest-snapshot/node_modules/semver/functions/gte.js499162500000000000 0
 114/home/init/coding/resources/algorithms-exercises/node_modules/postcss-modules/node_modules/postcss/lib/tokenize.js499162500000000000 0
 87/home/init/coding/resources/algorithms-exercises/node_modules/browserify-zlib/yarn.lock1496504692000000000 0
-80/home/init/coding/resources/algorithms-exercises/specs/arrays/linkedlist.test.js1628793154198757400 0
+80/home/init/coding/resources/algorithms-exercises/specs/arrays/linkedlist.test.js1629152113580000000 0
 89/home/init/coding/resources/algorithms-exercises/node_modules/@babel/helpers/lib/index.js456789000000000000 0
 86/home/init/coding/resources/algorithms-exercises/node_modules/postcss-minify-selectors1628793171358757400 1
 104/home/init/coding/resources/algorithms-exercises/node_modules/jest-jasmine2/build/jasmine/createSpy.d.ts499162500000000000 0
@@ -14774,7 +14774,7 @@
 103/home/init/coding/resources/algorithms-exercises/node_modules/babel-plugin-dynamic-import-node/utils.js499162500000000000 0
 124/home/init/coding/resources/algorithms-exercises/node_modules/@babel/plugin-transform-named-capturing-groups-regex/README.md456789000000000000 0
 113/home/init/coding/resources/algorithms-exercises/node_modules/@babel/runtime/helpers/esm/classPrivateMethodSet.js456789000000000000 0
-61/home/init/coding/resources/algorithms-exercises/node_modules1628875366400000000 1
+61/home/init/coding/resources/algorithms-exercises/node_modules1629209163653265800 1
 109/home/init/coding/resources/algorithms-exercises/node_modules/@parcel/resolver-default/src/DefaultResolver.js499162500000000000 0
 87/home/init/coding/resources/algorithms-exercises/node_modules/resolve/test/nonstring.js499162500000000000 0
 101/home/init/coding/resources/algorithms-exercises/node_modules/@parcel/transformer-babel/src/config.js499162500000000000 0
@@ -23014,7 +23014,7 @@
 102/home/init/coding/resources/algorithms-exercises/node_modules/uncss/node_modules/color-name/.npmignore1435528315000000000 0
 126/home/init/coding/resources/algorithms-exercises/node_modules/postcss-reduce-transforms/node_modules/color-name/.eslintrc.json1472935725000000000 0
 134/home/init/coding/resources/algorithms-exercises/node_modules/postcss-reduce-transforms/node_modules/chalk/node_modules/supports-color1628793171668757400 1
-86/home/init/coding/resources/algorithms-exercises/specs/bubble-sort/bubble-sort.test.js1628869956290000000 0
+86/home/init/coding/resources/algorithms-exercises/specs/bubble-sort/bubble-sort.test.js1628876475730000000 0
 92/home/init/coding/resources/algorithms-exercises/node_modules/available-typed-arrays/.github1628793172818757400 1
 145/home/init/coding/resources/algorithms-exercises/node_modules/postcss-reduce-transforms/node_modules/chalk/node_modules/supports-color/browser.js1521908559000000000 0
 142/home/init/coding/resources/algorithms-exercises/node_modules/postcss-reduce-transforms/node_modules/chalk/node_modules/supports-color/license1496344655000000000 0
@@ -24329,7 +24329,7 @@
 135/home/init/coding/resources/algorithms-exercises/node_modules/postcss-minify-font-values/node_modules/postcss-value-parser/package.json499162500000000000 0
 128/home/init/coding/resources/algorithms-exercises/node_modules/postcss-normalize-whitespace/node_modules/postcss/lib/postcss.d.ts499162500000000000 0
 124/home/init/coding/resources/algorithms-exercises/node_modules/postcss-normalize-whitespace/node_modules/postcss/lib/input.js499162500000000000 0
-80/home/init/coding/resources/algorithms-exercises/node_modules/.package-lock.json1628875366640000000 0
+80/home/init/coding/resources/algorithms-exercises/node_modules/.package-lock.json1629209163883265800 0
 71/home/init/coding/resources/algorithms-exercises/node_modules/sshpk/man1628793173868757400 1
 124/home/init/coding/resources/algorithms-exercises/node_modules/postcss-normalize-whitespace/node_modules/postcss/lib/parse.js499162500000000000 0
 128/home/init/coding/resources/algorithms-exercises/node_modules/postcss-normalize-whitespace/node_modules/postcss/lib/warn-once.js499162500000000000 0

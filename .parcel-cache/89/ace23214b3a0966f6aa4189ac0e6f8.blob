@@ -1,0 +1,21 @@
+td {
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+table {
+  margin-bottom: 10px;
+}
+
+td {
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+table {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=index.HASH_REF_a09506a94c4a783079927bfdbff5f729.css.map */

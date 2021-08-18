@@ -1,0 +1,160 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  _parcelHelpers.export(exports, "clear", function () {
+    return clear;
+  });
+  _parcelHelpers.export(exports, "snapshot", function () {
+    return snapshot;
+  });
+  _parcelHelpers.export(exports, "done", function () {
+    return done;
+  });
+  _parcelHelpers.export(exports, "App", function () {
+    return App;
+  });
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _lodash = require("lodash");
+  var _lodashDefault = _parcelHelpers.interopDefault(_lodash);
+  var _jsxFileName = "/home/init/coding/resources/algorithms-exercises/src/sort-visualizer.js";
+  function clear() {
+    isDone = false;
+    reducedSnapshots = [];
+    snapshots = [];
+  }
+  let snapshots = [];
+  const snapshot = array => snapshots.push(Array.from(array));
+  let isDone = false;
+  let reducedSnapshots = [];
+  const done = () => {
+    reducedSnapshots = snapshots.reduce((accumulator, current) => {
+      let shouldAdd = false;
+      if (accumulator.length) {
+        let prev = accumulator[accumulator.length - 1];
+        for (let i = 0; i < current.length; i++) {
+          if (current[i] !== prev[i]) {
+            shouldAdd = true;
+            break;
+          }
+        }
+      } else {
+        shouldAdd = true;
+      }
+      if (shouldAdd) {
+        accumulator.push(current);
+      }
+      return accumulator;
+    }, []);
+    isDone = true;
+  };
+  class App extends _reactDefault.default.Component {
+    render() {
+      if (!isDone) return (
+        /*#__PURE__*/_reactDefault.default.createElement("h1", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38,
+            columnNumber: 25
+          }
+        }, "You must call `done()` for this to render")
+      );
+      const max = _lodashDefault.default.max(reducedSnapshots[0]);
+      const min = _lodashDefault.default.min(reducedSnapshots[0]);
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44,
+            columnNumber: 7
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 45,
+            columnNumber: 9
+          }
+        }, "Snapshots: ", snapshots.length), /*#__PURE__*/_reactDefault.default.createElement("h1", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 9
+          }
+        }, "Unique Snapshots: ", reducedSnapshots.length), /*#__PURE__*/_reactDefault.default.createElement("table", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47,
+            columnNumber: 9
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("tbody", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 48,
+            columnNumber: 11
+          }
+        }, reducedSnapshots.map((snapshot, index) => /*#__PURE__*/_reactDefault.default.createElement(Snapshot, {
+          max: max,
+          min: min,
+          key: index,
+          data: snapshot,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 50,
+            columnNumber: 15
+          }
+        })))))
+      );
+    }
+  }
+  class Snapshot extends _reactDefault.default.Component {
+    getColor(input) {
+      const max = this.props.max - this.props.min;
+      const value = input - this.props.min;
+      const spectrum = value / max;
+      const red = spectrum < 0.5 ? Math.floor(Math.abs(spectrum - 0.5) * 2 * 255) : 0;
+      const blue = spectrum > 0.5 ? Math.floor((spectrum - 0.5) * 2 * 255) : 0;
+      const green = blue > 0 ? 255 - blue : 255 - red;
+      return `rgb(${red},${green},${blue})`;
+    }
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("tr", {
+          className: "row",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 74,
+            columnNumber: 7
+          }
+        }, this.props.data.map(num => /*#__PURE__*/_reactDefault.default.createElement("td", {
+          key: num,
+          style: {
+            backgroundColor: this.getColor(num)
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76,
+            columnNumber: 11
+          }
+        }, num)))
+      );
+    }
+  }
+  exports.default = snapshot;
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

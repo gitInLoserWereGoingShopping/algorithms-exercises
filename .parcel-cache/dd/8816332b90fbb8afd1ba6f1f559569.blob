@@ -1,0 +1,53 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _lodash = require("lodash");
+  var _sortVisualizer = require("./sort-visualizer");
+  require("./sort.css");
+  var _jsxFileName = "/home/init/coding/resources/algorithms-exercises/src/Sort.js";
+  function sort(array) {
+    // do cool stuff here
+    // call snapshot any time you do anything to the array
+    // it's okay if you call it with duplicate value array,
+    // it will deduplicate for you
+    // for (let i = 1; i < nums.length; i++) {
+    // let numberToInsert = nums[i];
+    // let j = 0;
+    // for (j = i - 1; nums[j] > numberToInsert && j >= 0; j--) {
+    // nums[j + 1] = nums[j];
+    // }
+    // nums[j + 1] = numberToInsert;
+    // }
+    // return nums;
+    _sortVisualizer.snapshot(array);
+  }
+  function SortComponent() {
+    _sortVisualizer.clear();
+    sort(_lodash.shuffle(_lodash.range(10)));
+    _sortVisualizer.done();
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement(_sortVisualizer.App, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 10
+        }
+      })
+    );
+  }
+  exports.default = SortComponent;
+  _c = SortComponent;
+  var _c;
+  $RefreshReg$(_c, "SortComponent");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
